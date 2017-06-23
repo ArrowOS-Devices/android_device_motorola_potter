@@ -36,8 +36,8 @@ persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=false
 ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
-
 vendor.use.voice.path.for.pcm.voip=false
+ro.config.media_vol_steps=25
 
 # Bluetooth
 bluetooth.hfp.client=1
