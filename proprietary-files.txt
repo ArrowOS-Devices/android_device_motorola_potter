@@ -104,11 +104,13 @@ etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin
 etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
 etc/permissions/cneapiclient.xml
+etc/permissions/com.motorola.hardware.dtv.xml
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 etc/permissions/embms.xml
 etc/permissions/ims.xml
 etc/permissions/imscm.xml
 etc/permissions/izat.xt.srv.xml
+etc/permissions/mot_dtv_permissions.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/qti_permissions.xml
 -framework/com.qti.snapdragon.sdk.display.jar
@@ -130,6 +132,8 @@ lib/libadvalgcore.so
 lib/libarcsoft_beautyshot.so
 lib/libcamerabgprocservice.so
 lib/libcom_fingerprints_service.so
+lib/libdtvhal.so
+lib/libdtvtuner.so
 lib/libfamily_photo.so
 lib/libjscore.so
 lib/libjustshoot.so
@@ -157,6 +161,8 @@ lib/libYuvSkia.so
 -priv-app/atfwd/atfwd.apk
 -priv-app/CNEService/CNEService.apk
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
+-priv-app/DTVPlayer/DTVPlayer.apk|de470ab2bef4948feb331524e21fead680b67aba
+-priv-app/DTVService/DTVService.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -priv-app/QtiTetherService/QtiTetherService.apk
 -vendor/app/colorservice/colorservice.apk
