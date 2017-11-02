@@ -7,6 +7,7 @@ bin/adspd
 bin/adsprpcd
 bin/batt_health
 bin/btnvtool
+bin/charge_only_mode
 bin/cnd
 bin/dbvc_atvc_property_set
 bin/hci_qcomm_init
