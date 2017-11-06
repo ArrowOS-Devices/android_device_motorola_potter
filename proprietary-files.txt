@@ -5,11 +5,9 @@
 -app/TimeService/TimeService.apk
 bin/adspd
 bin/adsprpcd
-bin/batt_health
 bin/btnvtool
 bin/charge_only_mode
 bin/cnd
-bin/dbvc_atvc_property_set
 bin/hci_qcomm_init
 bin/ims_rtp_daemon
 bin/imscmservice
