@@ -323,6 +323,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.ril.sh \
     ueventd.qcom.rc
+    init.safailnet.rc
 
 # Powerhint configuration file
 PRODUCT_COPY_FILES += \
