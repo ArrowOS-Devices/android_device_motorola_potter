@@ -16,6 +16,7 @@
 
 # Inherit from potter device
 $(call inherit-product, device/motorola/potter/device.mk)
+$(call inherit-product, device/motorola/potter/dexpreopt.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
