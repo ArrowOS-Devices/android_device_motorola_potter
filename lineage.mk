@@ -17,11 +17,6 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
-$(call inherit-product, device/motorola/potter/core_32_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# for specific
-$(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
