@@ -1,3 +1,1 @@
-typeattribute platform_app mlstrustedsubject;
-
 allow platform_app isdbt_device:chr_file rw_file_perms;
