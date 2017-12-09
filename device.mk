@@ -347,7 +347,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-potter.conf:system/vendor/etc/thermal-engine-potter.conf
+    $(LOCAL_PATH)/configs/thermal-engine-potter.conf:system/vendor/etc/thermal-engine.conf
 
 # USB HAL
 PRODUCT_PACKAGES += \
