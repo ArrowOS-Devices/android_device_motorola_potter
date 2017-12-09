@@ -315,7 +315,8 @@ PRODUCT_PACKAGES += \
 
 # Powerhint configuration file
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/powerhint.xml:system/etc/powerhint.xml
+     $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml \
+     $(LOCAL_PATH)/configs/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml
 
 # Releasetools script
 PRODUCT_COPY_FILES += \
