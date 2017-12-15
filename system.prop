@@ -2,6 +2,10 @@
 # system.prop for potter
 #
 
+# Fling Velocity
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # Audio
 audio.deep_buffer.media=true
 vendor.audio.offload.buffer.size.kb=64
