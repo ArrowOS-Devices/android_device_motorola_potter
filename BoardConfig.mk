@@ -138,9 +138,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 # CNE / DPM
 BOARD_USES_QCNE := true
 
-# CPUsets
-ENABLE_CPUSETS := true
-
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
