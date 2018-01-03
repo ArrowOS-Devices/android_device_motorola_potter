@@ -315,7 +315,7 @@ PRODUCT_COPY_FILES += \
 
 # Releasetools script
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/check_features.sh:install/bin/check_features.sh
+    $(LOCAL_PATH)/configs/check_features.sh:system/vendor/bin/check_features.sh
 
 # RIL
 PRODUCT_PACKAGES += \
