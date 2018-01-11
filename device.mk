@@ -198,10 +198,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0-impl \
     android.hardware.health@1.0-service
 
-# IMS
-PRODUCT_PACKAGES += \
-    libshim_ims
-
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
@@ -329,7 +325,6 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl \
-    libshim_ril \
     libprotobuf-cpp-full \
     libxml2
 
