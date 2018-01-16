@@ -184,6 +184,8 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 # Media
 # TARGET_USES_MEDIA_EXTENSIONS := true
 
+PRODUCT_BOOT_JARS += telephony-ext
+
 NXP_CHIP_TYPE := PN551
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
 
