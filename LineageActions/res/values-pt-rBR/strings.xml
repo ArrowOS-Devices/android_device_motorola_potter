@@ -68,7 +68,6 @@
     <string name="action_dialer">Abrir discador</string>
     <string name="action_email">Abrir app de mail</string>
     <string name="action_messages">Abrir app de mensagens</string>
-    <string name="action_pip">Modo picture-in-picture</string>
 
     <!-- Screen off gestures -->
     <string name="screen_off_gestures_title">Gestos com a tela desligada</string>
@@ -90,9 +89,6 @@
    <string name="haptic_feedback">Retorno tátil</string>
    <string name="haptic_feedback_summary">Vibrar quando um gesto for detectado</string>
    
-   <!-- Pip -->
-   <string name="app_does_not_support_pip">O aplicativo não tem suporte ao modo picture-in-picture.</string>
-
    <!-- Proximity sensor -->
    <string name="allow_proximity_sensor_title">Habilitar o sensor de proximidade</string>
    <string name="allow_proximity_sensor_summary">Verificar o sensor de proximidade antes de executar a ação</string>

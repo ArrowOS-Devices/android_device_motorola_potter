@@ -68,7 +68,6 @@
     <string name="action_dialer">Open dialer</string>
     <string name="action_email">Open email app</string>
     <string name="action_messages">Open messages app</string>
-    <string name="action_pip">Picture-in-Picture mode</string>
 
     <!-- Screen off gestures -->
     <string name="screen_off_gestures_title">Screen off gestures</string>
@@ -90,9 +89,6 @@
    <string name="haptic_feedback">Haptic feedback</string>
    <string name="haptic_feedback_summary">Vibrate when a touchscreen gesture is detected</string>
    
-   <!-- Pip -->
-   <string name="app_does_not_support_pip">App does not support picture-in-picture mode.</string>
-
    <!-- Proximity sensor -->
    <string name="allow_proximity_sensor_title">Allow proximity sensor</string>
    <string name="allow_proximity_sensor_summary">Check the proximity sensor before performing the action</string>
