@@ -943,7 +943,6 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/interactive/io_is_busy 0
     write /sys/devices/system/cpu/cpufreq/interactive/target_loads "85 1401600:80"
     write /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 39000
-    write /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor 40000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 652800
 
     # re-enable thermal & BCL core_control now
@@ -981,11 +980,9 @@ on property:sys.boot_completed=1
     write /sys/module/process_reclaim/parameters/enable_process_reclaim 1
     write /sys/module/process_reclaim/parameters/pressure_max 70
     write /sys/module/process_reclaim/parameters/swap_opt_eff 30
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/process_reclaim/parameters/pressure_min 50
     write /sys/module/process_reclaim/parameters/per_swap_size 512
     write /sys/module/lowmemorykiller/parameters/minfree "15360,19200,23040,26880,34415,43737"
-    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
     #Reset the "read ahead" setting for system patition
     # result: ext4: 32KB, dm_verity:64KB, block layer: 128KB
