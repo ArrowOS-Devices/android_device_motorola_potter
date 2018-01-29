@@ -173,7 +173,8 @@ PRODUCT_PACKAGES += \
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
-    libfmjni
+    libfmjni \
+    init.qti.fm.sh
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
