@@ -15,7 +15,8 @@ Storage | 32 GB
 MicroSD | Up to 256 GB
 Battery | Li-Ion 3000mAh battery
 Display | 1080 x 1920 pixels, 5.2 inches (~402 ppi pixel density)
-Camera  | 12 MP, 2150 x 1440 pixels, laser focus, dual flash LED
+Rear Camera  | 12 MP, f/1.7, 4032 x 3024 pixels, Dual Pixel Autofocus, dual flash LED
+Front Camera  |  5 MP, f/2.2, 2592 x 1944 pixels
 
 Copyright 2017 - The LineageOS Project.
 
