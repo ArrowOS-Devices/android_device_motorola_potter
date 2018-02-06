@@ -341,4 +341,11 @@
         <item>com.moto.actions.KeyHandler</item>
     </string-array>
 
+    <!-- Screen pinning exit mode
+        0 - Navigation bar (default behavior)
+        1 - Long press back button
+        2 - Long press power button
+    -->
+    <integer name="config_screenPinningExitMode">2</integer>
+
 </resources>
