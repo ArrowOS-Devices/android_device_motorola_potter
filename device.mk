@@ -136,8 +136,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libdisplayconfig \
     libqdMetaData.system \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.0_vendor
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
