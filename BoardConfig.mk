@@ -234,6 +234,14 @@ MOT_SENSOR_HUB_FEATURE_PEDO := true
 MOT_SENSOR_HUB_FEATURE_LA := true
 MOT_SENSOR_HUB_FEATURE_GR := true
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/bin/adspd|libshim_adsp.so \
+    /system/lib/lib_motsensorlistener.so|libsensor.so \
+	/system/lib/libjustshoot.so|libshims_camera.so \
+	/system/lib/hw/camera.msm8953.so|libshim_camera_hal.so \
+	/system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
