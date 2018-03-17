@@ -213,8 +213,6 @@ persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 persist.data.iwlan.enable=true
 
-persist.vendor.radio.add_power_save=1
-
 # RmNet Data
 persist.rmnet.data.enable=true
 persist.data.wda.enable=true
