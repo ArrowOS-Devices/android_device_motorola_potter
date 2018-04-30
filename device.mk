@@ -91,17 +91,13 @@ PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/audio_ext_spkr.conf:system/vendor/etc/audio_ext_spkr.conf \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/vendor/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/vendor/etc/sound_trigger_platform_info.xml    
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/vendor/etc/sound_trigger_platform_info.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service
-
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -351,6 +347,9 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     telephony-ext
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf \
@@ -401,10 +400,6 @@ PRODUCT_PACKAGES += \
     wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
-
-# Launcher3
-PRODUCT_PACKAGES += \
-    Launcher3
 
 #Thermal
 PRODUCT_PACKAGES += android.hardware.thermal@1.0-impl \

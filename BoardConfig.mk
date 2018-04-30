@@ -41,19 +41,12 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
-
+TARGET_CPU_CORTEX_A53 := true
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-
-TARGET_CPU_CORTEX_A53 := true
-
-# TARGET_PREFER_32_BIT := true
-# TARGET_SUPPORTS_32_BIT_APPS := true
-# TARGET_SUPPORTS_64_BIT_APPS := true
-# TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
@@ -92,10 +85,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := potter_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
-
 TARGET_USE_SDCLANG := true
 
 # Audio
@@ -135,7 +126,6 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # Camera
-# TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 
@@ -189,8 +179,7 @@ BOARD_HARDWARE_CLASS += \
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
-PRODUCT_BOOT_JARS += telephony-ext
-
+# NFC
 NXP_CHIP_TYPE := PN551
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
 
@@ -226,17 +215,13 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Sensor
 USE_SENSOR_MULTI_HAL := true
-
 BOARD_USES_MOT_SENSOR_HUB := true
 BOARD_USES_CAP_SENSOR_SX9310 := true
-
 MOT_SENSOR_HUB_HW_TYPE_L0 := true
-
 MOT_AP_SENSOR_HW_REARPROX := true
 MOT_AP_SENSOR_HW_REARPROX_2 := true
 MOT_SENSOR_HUB_HW_AK09912 := true
 MOT_SENSOR_HUB_HW_BMI160 := true
-
 MOT_SENSOR_HUB_FEATURE_CHOPCHOP := true
 MOT_SENSOR_HUB_FEATURE_LIFT := true
 MOT_SENSOR_HUB_FEATURE_PEDO := true
@@ -247,9 +232,9 @@ MOT_SENSOR_HUB_FEATURE_GR := true
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/adspd|libshim_adsp.so \
     /system/lib/lib_motsensorlistener.so|libsensor.so \
-	/system/lib/libjustshoot.so|libshims_camera.so \
-	/system/lib/hw/camera.msm8953.so|libshim_camera_hal.so \
-	/system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
+    /system/lib/libjustshoot.so|libshims_camera.so \
+    /system/lib/hw/camera.msm8953.so|libshim_camera_hal.so \
+    /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -263,4 +248,3 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
-
