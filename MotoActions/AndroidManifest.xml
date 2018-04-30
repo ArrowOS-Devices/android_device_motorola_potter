@@ -20,8 +20,8 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/moto_actions_title"
-        android:icon="@mipmap/ic_launcher"
+        android:label="@string/screen_gestures_panel_title"
+        android:icon="@drawable/ic_gesture"
         android:persistent="true">
 
         <provider
@@ -61,21 +61,9 @@
 
         <activity
             android:name=".ActionsPreferenceActivity"
-            android:label="@string/moto_actions_title"
+            android:label="@string/screen_gestures_panel_title"
             android:summary="@string/device_gestures_summary"
             android:theme="@style/MotoActions">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/device_gestures_summary" />
         </activity>
 
         <activity
