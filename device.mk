@@ -60,6 +60,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
+# ARCore
+PRODUCT_PACKAGES += \
+    arcore
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.calibration_cad=/system/etc/calibration_cad.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/calibration_cad.xml:system/etc/calibration_cad.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.msm8953 \
