@@ -27,4 +27,10 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">com.moto.actions/com.moto.actions.DozeSettingsActivity</string>
+
+    <!-- Device specific gesture package -->
+    <string name="config_customGesturePackage">com.moto.actions/com.moto.actions.ActionsPreferenceActivity</string>
+
 </resources>
