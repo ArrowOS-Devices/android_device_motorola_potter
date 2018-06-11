@@ -61,6 +61,9 @@ ro.bluetooth.dun=true
 ro.qualcomm.bluetooth.map=true
 persist.bt.enableAptXHD=true
 
+# Boot
+sys.vendor.shutdown.waittime=500
+
 # Camera
 camera.disable_zsl_mode=1
 persist.vendor.camera.display.umax=1920x1080
