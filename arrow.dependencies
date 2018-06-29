@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "github",
+    "repository":  "boulzordev/android_kernel_motorola_msm8953",
+    "target_path": "kernel/motorola/msm8953",
+    "branch": "lineage-15.1-64"
+  },
+  {
+    "remote": "github",
+    "repository": "kubersharma001/android_vendor_motorola_potter",
+    "target_path": "vendor/motorola/potter",
+    "branch": "oreo8.1"
+  },
+  {
+    "remote": "github",
+    "repository": "kubersharma001/packages_resources_MotoActions",
+    "target_path": "packages/resources/MotoActions",
+    "branch": "oreo8.1"
+  }
+]

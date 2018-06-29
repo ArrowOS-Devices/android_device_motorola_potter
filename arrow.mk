@@ -18,8 +18,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -27,7 +27,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := lineage_potter
+PRODUCT_NAME := arrow_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
