@@ -1,26 +1,26 @@
 [
   {
     "remote": "github",
-    "repository":  "kubersharma001/android_kernel_motorola_msm8953",
+    "repository":  "arrow-devices/android_kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
-    "branch": "lineage-15.1-64"
+    "branch": "arrow-8.x"
   },
   {
     "remote": "github",
-    "repository": "kubersharma001/android_vendor_motorola_potter",
+    "repository": "arrow-devices/android_vendor_motorola_potter",
     "target_path": "vendor/motorola/potter",
-    "branch": "oreo8.1"
+    "branch": "arrow-8.x"
   },
   {
     "remote": "github",
-    "repository": "kubersharma001/packages_resources_MotoActions",
+    "repository": "arrow-devices/packages_resources_MotoActions",
     "target_path": "packages/resources/MotoActions",
-    "branch": "oreo8.1"
+    "branch": "arrow-8.x"
   },
   {
-    "repository": "kubersharma001/prebuilts_clang_host_linux-x86_7.0-DragonTC",
+    "remote": "github",
+    "repository": "arrow-devices/prebuilts_clang_host_linux-x86_7.0-DragonTC",
     "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC",
-    "branch": "master",
-    "remote": "github"
+    "branch": "arrow-8.x"
   }
 ]
