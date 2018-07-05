@@ -1,7 +1,7 @@
 include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleCameraMod
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := GoogleCameraMod/GoogleCamera-Pixel2Mod-Arnova8G2-V7beta-test-9_jhenrique09_mod.apk
+LOCAL_SRC_FILES := GoogleCameraMod/GoogleCamera_5.2.025-Minimal-Beta-Final.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
