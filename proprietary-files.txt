@@ -115,8 +115,9 @@ etc/permissions/qti_permissions.xml
 -framework/embmslibrary.jar
 -framework/imscmlibrary.jar
 -framework/izat.xt.srv.jar
--framework/qcrilhook.jar
--framework/qti-telephony-common.jar
+framework/QtiTelephonyServicelibrary.jar
+framework/qcrilhook.jar
+framework/qti-telephony-common.jar
 lib/hw/camera.msm8953.so
 lib/hw/fingerprint.msm8953.so
 lib/hw/sensorhub.msm8953.so
