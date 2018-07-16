@@ -469,4 +469,8 @@
 	<bool name="config_smart_battery_available">true</bool>
 	<dimen name="config_dialogCornerRadius">8.0dip</dimen>
 	<dimen name="config_buttonCornerRadius">4.0dip</dimen>
+
+    <!-- Flashlight on power button -->
+    <integer name="config_flashlightProximityTimeout">3000</integer>
+
 </resources>
