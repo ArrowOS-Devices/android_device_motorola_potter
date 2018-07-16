@@ -1,26 +1,18 @@
 [
   {
-    "remote": "github",
-    "repository":  "arrow-devices/android_kernel_motorola_msm8953",
-    "target_path": "kernel/motorola/msm8953",
-    "branch": "arrow-8.x"
+    "repository":  "android_kernel_motorola_msm8953",
+    "target_path": "kernel/motorola/msm8953"
   },
   {
-    "remote": "github",
-    "repository": "arrow-devices/android_vendor_motorola_potter",
-    "target_path": "vendor/motorola/potter",
-    "branch": "arrow-8.x"
+    "repository": "android_vendor_motorola_potter",
+    "target_path": "vendor/motorola/potter"
   },
   {
-    "remote": "github",
-    "repository": "arrow-devices/packages_resources_MotoActions",
-    "target_path": "packages/resources/MotoActions",
-    "branch": "arrow-8.x"
+    "repository": "packages_resources_MotoActions",
+    "target_path": "packages/resources/MotoActions"
   },
   {
-    "remote": "github",
-    "repository": "arrow-devices/prebuilts_clang_host_linux-x86_7.0-DragonTC",
-    "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC",
-    "branch": "arrow-8.x"
+    "repository": "prebuilts_clang_host_linux-x86_7.0-DragonTC",
+    "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC"
   }
 ]
