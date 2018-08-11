@@ -284,12 +284,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libnfc \
-    libnfc_jni \
-    nfc_nci.msm8953 \
     NfcNci \
     Tag \
     com.android.nfc_extras \
-    android.hardware.nfc@1.0-impl
+    android.hardware.nfc@1.1-service \
+	SecureElement
 
 # OMX
 PRODUCT_PACKAGES += \
