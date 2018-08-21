@@ -1,9 +1,7 @@
 [
   {
-   "remote": "github",
-   "repository": "GZR-Kernels/Optimus_Drunk_Potter",
-   "target_path": "kernel/motorola/msm8953",
-   "revision": "8.1"
+    "repository":  "android_kernel_motorola_msm8953",
+    "target_path": "kernel/motorola/msm8953"
   },
   {
     "repository": "android_vendor_motorola_potter",
