@@ -232,6 +232,9 @@ USE_DEVICE_SPECIFIC_THERMAL := true
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-08-01
+
 # VNDK
 PRODUCT_USE_VNDK_OVERRIDE := false
 
