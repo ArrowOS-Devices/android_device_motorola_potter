@@ -137,8 +137,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/cacert_location.pem:system/vendor/etc/cacert_location.pem
 
 # MotoActions
-#PRODUCT_PACKAGES += \
-#    MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
 
 # Product Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 24
