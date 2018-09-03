@@ -353,11 +353,7 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
-
-#PRODUCT_BOOT_JARS += \
-    telephony-ext
+    ims-ext-common
 
 # Sensors
 PRODUCT_COPY_FILES += \
