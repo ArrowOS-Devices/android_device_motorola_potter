@@ -140,6 +140,9 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    MotoActions
 
+# Product Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 24
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8953 \
