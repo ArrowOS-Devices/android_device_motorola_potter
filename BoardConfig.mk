@@ -236,6 +236,7 @@ TARGET_USES_MKE2FS := true
 PRODUCT_USE_VNDK_OVERRIDE := false
 
 # Wifi
+BOARD_HAS_QCOM_WLAN              := true
 BOARD_USES_AOSP_WLAN_HAL         := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
 BOARD_WLAN_DEVICE                := qcwcn
