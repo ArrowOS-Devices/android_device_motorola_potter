@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,9 @@
 # limitations under the License.
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
