@@ -63,3 +63,6 @@ allow init sysfs_battery_supply:lnk_file {open read };
 allow init sysfs_fpc:file { rw_file_perms setattr };
 allow init proc:file { open write };
 allow init sysfs_capsense:file setattr;
+
+# Allow init to mount vendor configs
+allow init vendor_configs_file:file mounton;
