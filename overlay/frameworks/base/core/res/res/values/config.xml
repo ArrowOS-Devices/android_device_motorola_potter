@@ -476,4 +476,6 @@
     <!-- Flashlight on power button -->
     <integer name="config_flashlightProximityTimeout">3000</integer>
 
+    <!-- Whether the device has fingeprint sensor or not -->
+    <bool name="config_hasFingerprintSensor">true</bool>
 </resources>
