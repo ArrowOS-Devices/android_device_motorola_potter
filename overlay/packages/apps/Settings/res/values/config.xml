@@ -33,4 +33,5 @@
     <!-- Device specific gesture package -->
     <string name="config_customGesturePackage">com.moto.actions/com.moto.actions.ActionsPreferenceActivity</string>
 
+    <bool name="config_enableManualSubProvisioning">true</bool>
 </resources>
