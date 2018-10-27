@@ -19,15 +19,21 @@ package com.moto.actions.utils;
 
 import android.content.Context;
 import android.provider.Settings;
+import static com.moto.actions.actions.Constants.*;
+import com.moto.actions.util.FileUtils;
 
 public class ProximityUtils {
-    public static boolean isProximityWakeEnabled(Context context){
-        boolean mProximityWakeSupported = context.getResources().getBoolean(
+    public static boolean isProximityWakeSupported(Context context){
+        return context.getResources().getBoolean(
                 com.android.internal.R.bool.config_proximityCheckOnWake);
-        boolean defaultProximity = context.getResources().getBoolean(
-                com.android.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
-        boolean proximityWakeCheckEnabled = Settings.System.getInt(context.getContentResolver(),
-                Settings.System.PROXIMITY_ON_WAKE, defaultProximity ? 1 : 0) == 1;
-        return mProximityWakeSupported && proximityWakeCheckEnabled;
+    }
+    public static void updateSystemPref(Context context){
+        boolean isProximityEnabledOnScreenOffGestures = Settings.System.getInt(context.getContentResolver(), KEY_GESTURE_ENABLE_PROXIMITY_SENSOR, 1) != 0;
+        boolean isProximityEnabledOnScreenOffGesturesFP = !FileUtils.readOneLine(FP_PROXIMITY_CHECK_SCREENOFF_NODE).equals("0");
+        boolean shouldEnable = true;
+        if (!isProximityEnabledOnScreenOffGestures && !isProximityEnabledOnScreenOffGesturesFP){
+            shouldEnable = false;
+        }
+        Settings.System.putInt(context.getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, shouldEnable ? 1 : 0);
     }
 }

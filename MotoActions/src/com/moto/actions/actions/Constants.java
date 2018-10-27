@@ -26,6 +26,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.moto.actions.util.FileUtils;
+import com.moto.actions.utils.ProximityUtils;
 
 public class Constants {
 
@@ -274,5 +275,10 @@ public class Constants {
             Log.w(TAG, "Write " + value + " to node " + node +
                 "failed while restoring saved preference values");
         }
+
+        if (pref.equals(FP_PROXIMITY_CHECK_SCREENOFF_KEY)){
+            ProximityUtils.updateSystemPref(context);
+        }
+
     }
 }
