@@ -168,7 +168,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.1-service.clearkey
+    android.hardware.drm@1.2-service.clearkey
 
 # Ebtables
 PRODUCT_PACKAGES += \
