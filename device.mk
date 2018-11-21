@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0_vendor \
     libjustshoot_shim
 
+# CarrierConfig
+PRODUCT_PACKAGES += \
+    CarrierConfig
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8953_mot_potter_camera.xml:system/etc/camera/msm8953_mot_potter_camera.xml \
     $(LOCAL_PATH)/configs/camera/mot_ov5695_chromatix.xml:system/etc/camera/mot_ov5695_chromatix.xml \
