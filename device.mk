@@ -1,4 +1,5 @@
 #
+#
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
 #
@@ -110,7 +111,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
-    GoogleCameraMod \
     Camera2 \
     libgui_vendor \
     camera.device@1.0-impl \
