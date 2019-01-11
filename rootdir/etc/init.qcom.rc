@@ -272,6 +272,9 @@ on post-fs
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
 
+on post-fs
+    start vendor.qseecomd
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /tombstones/modem 0771 system system
