@@ -142,6 +142,7 @@ ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.texture_cache_size=72
 
 # IMS
+persist.vendor.radio.jbims=1
 persist.radio.RATE_ADAPT_ENABLE=1
 persist.radio.VT_ENABLE=1
 persist.radio.VT_HYBRID_ENABLE=1
