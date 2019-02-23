@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-#               2017 The LineageOS Project
+#               2017-2018 The LineageOS Project
+#               2018-2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -189,6 +190,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3510353920    #  3428080 * 1024 mmcblk0p53
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26401026048 # 25782252 * 1024 mmcblk0p54
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
+BOARD_ROOT_EXTRA_FOLDERS := dsp firmware fsg persist
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
