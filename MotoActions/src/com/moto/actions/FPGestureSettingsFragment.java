@@ -38,13 +38,10 @@ import com.moto.actions.actions.Constants;
 import static com.moto.actions.actions.Constants.FP_HOME_KEY;
 import static com.moto.actions.actions.Constants.FP_HOME_KEY_OFF;
 
-import com.moto.actions.utils.ProximityUtils;
-
 public class FPGestureSettingsFragment extends PreferenceFragment {
 
     private SwitchPreference mFPScreenOffGesture;
     private PreferenceCategory mFPScreenOffCategory;
-    private SwitchPreference mFPScreenOffProxCheck;
     private PreferenceCategory mFPScreenOnCategory;
 
     private TextView mSwitchBarText;
@@ -86,11 +83,11 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
         mSwitchBarText.setText(isFPGestureEnabled() ? R.string.switch_bar_on :
                 R.string.switch_bar_off);
     }
-
+    
     private void updatePrefs(boolean enabled){
         Editor prefEditor = PreferenceManager.getDefaultSharedPreferences(getActivity()).edit();
         prefEditor.putBoolean(FP_HOME_KEY, enabled);
-        prefEditor.apply();
+        prefEditor.apply(); 
         mFPScreenOnCategory.setEnabled(enabled);
         mFPScreenOffGesture.setEnabled(enabled);
         mFPScreenOffCategory.setEnabled(enabled);
@@ -99,12 +96,8 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
             mFPScreenOffGesture.setEnabled(!hasEnrolledFingerprints);
             mFPScreenOffCategory.setEnabled(!hasEnrolledFingerprints);
         }
-        if (!ProximityUtils.isProximityWakeSupported(getActivity()) && mFPScreenOffProxCheck != null){
-            mFPScreenOffCategory.removePreference(mFPScreenOffProxCheck);
-            mFPScreenOffProxCheck = null;
-        }
     }
-
+    
     private boolean isFPGestureEnabled(){
         return Constants.isPreferenceEnabled(getActivity(), FP_HOME_KEY);
     }
@@ -114,7 +107,6 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
         addPreferencesFromResource(R.xml.fp_gesture_panel);
         mFPScreenOffGesture = (SwitchPreference) findPreference(FP_HOME_KEY_OFF);
         mFPScreenOffCategory = (PreferenceCategory) findPreference("fp_keys_scr_off");
-        mFPScreenOffProxCheck = (SwitchPreference) mFPScreenOffCategory.findPreference("fp_proximity_check_scr_off");
         mFPScreenOnCategory = (PreferenceCategory) findPreference("fp_keys_scr_on");
         updatePrefs(isFPGestureEnabled());
     }

@@ -69,8 +69,6 @@ import java.util.List;
 
 import static com.moto.actions.actions.Constants.*;
 
-import com.moto.actions.utils.ProximityUtils;
-
 public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
@@ -101,6 +99,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private Sensor mProximitySensor;
     private Vibrator mVibrator;
     private int mProximityTimeOut;
+    private boolean mProximityWakeSupported;
     private ISearchManager mSearchManagerService;
     private Handler mHandler;
     private int fpTapCounts = 0;
@@ -147,16 +146,6 @@ public class KeyHandler implements DeviceKeyHandler {
 
         mGestureWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
                 "GestureWakeLock");
-
-        mProximityTimeOut = mContext.getResources().getInteger(
-                com.android.internal.R.integer.config_proximityCheckTimeout);
-
-        if (ProximityUtils.isProximityWakeSupported(mContext)) {
-            mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
-            mProximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
-            mProximityWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
-                    "ProximityWakeLock");
-        }
 
         mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         if (mVibrator == null || !mVibrator.hasVibrator()) {
@@ -441,11 +430,11 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private boolean isProximityEnabledOnScreenOffGesturesFP() {
-        return ProximityUtils.isProximityWakeSupported(mContext) && !FileUtils.readOneLine(getFPNodeBasedOnScreenState(FP_PROXIMITY_CHECK_SCREENOFF_NODE)).equals("0");
+        return !FileUtils.readOneLine(getFPNodeBasedOnScreenState(FP_PROXIMITY_CHECK_SCREENOFF_NODE)).equals("0");
     }
 
     private boolean isProximityEnabledOnScreenOffGestures() {
-        return ProximityUtils.isProximityWakeSupported(mContext) && Settings.System.getInt(mContext.getContentResolver(), KEY_GESTURE_ENABLE_PROXIMITY_SENSOR, 1) != 0;
+        return Settings.System.getInt(mContext.getContentResolver(), KEY_GESTURE_ENABLE_PROXIMITY_SENSOR, 1) != 0;
     }
 
     private String getFPNodeBasedOnScreenState(String node) {
@@ -496,7 +485,7 @@ public class KeyHandler implements DeviceKeyHandler {
         if (event.getAction() != KeyEvent.ACTION_UP) {
             return null;
         }
-
+        
         if (isFPScanCode){
             if (fpGesturePending) {
                 return event;
