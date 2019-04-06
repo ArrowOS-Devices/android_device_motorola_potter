@@ -424,6 +424,10 @@ on post-fs-data
     mkdir /dev/socket/location/mq 0770 gps gps
     mkdir /dev/socket/location/xtra 0770 gps gps
 
+    #Create directory from IMS services
+    mkdir /data/shared 0755
+    chown system system /data/shared
+
     # Create /data/vendor/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
@@ -459,6 +463,10 @@ on post-fs-data
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
 
+    #Create FM dir for patchdownloader
+    mkdir /data/vendor/fm 0770 system system
+    chmod 0770 /data/vendor/fm
+
     setprop vold.post_fs_data_done 1
 
 service vendor.charger /charger
@@ -491,10 +499,9 @@ service vendor.thermal-engine /system/vendor/bin/thermal-engine
    writepid /dev/cpuset/system-background/tasks
 
 service vendor.time_daemon /system/vendor/bin/time_daemon
-   class late_start
-   user root
-   group root
-   writepid /dev/cpuset/system-background/tasks
+    class main
+    user root
+    group root
 
 service audiod /system/vendor/bin/audiod
    class late_start
@@ -530,7 +537,7 @@ service vendor.esepmdaemon /system/vendor/bin/esepmdaemon
     user system
     group nfc
 
-service wcnss-service /system/vendor/bin/wcnss_service
+service vendor.wcnss-service /system/vendor/bin/wcnss_service
     class main
     user system
     group system wifi radio
@@ -786,11 +793,6 @@ service vendor.loc_launcher /system/vendor/bin/loc_launcher
     user gps
     group gps
     writepid /dev/cpuset/system-background/tasks
-
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
-    class core
-    user root
-    group root
 
 on property:hw.fm.init=0
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 0
