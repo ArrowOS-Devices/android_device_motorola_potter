@@ -19,15 +19,18 @@
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
-## Device identifier. This must come after all inclusions
+#Havoc Official
+export export HAVOC_BUILD_TYPE=Official
+
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := arrow_potter
+PRODUCT_NAME := havoc_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
