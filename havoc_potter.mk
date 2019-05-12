@@ -18,7 +18,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common ArrowOS stuff.
+# Inherit some common HavocOS stuff.
 $(call inherit-product, vendor/havoc/config/common.mk)
 
 # Boot animation
