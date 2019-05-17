@@ -18,6 +18,10 @@ ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
     LOCAL_CFLAGS += -DINTERACTION_BOOST
 endif
 
+ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
+    LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
+endif
+
 LOCAL_MODULE := android.hardware.power@1.2-service
 LOCAL_INIT_RC := android.hardware.power@1.2-service.rc
 LOCAL_MODULE_TAGS := optional

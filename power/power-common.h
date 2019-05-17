@@ -61,6 +61,7 @@ enum CPU_GOV_CHECK {
 void power_init(void);
 void power_hint(power_hint_t hint, void *data);
 void set_interactive(int on);
+void set_feature(feature_t feature, int state);
 
 #ifdef __cplusplus
 }
