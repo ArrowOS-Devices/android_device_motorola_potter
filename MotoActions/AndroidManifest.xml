@@ -66,19 +66,22 @@
         <activity
             android:name=".GestureSettingsActivity"
             android:label="@string/device_gestures_title"
-            android:theme="@style/MotoActions">
+            android:theme="@style/MotoActions"
+            android:exported="true">
         </activity>
 
         <activity
             android:name=".FPGestureSettingsActivity"
             android:label="@string/fingerprint_gestures_title"
-            android:theme="@style/MotoActions">
+            android:theme="@style/MotoActions"
+            android:exported="true">
         </activity>
 
         <activity
             android:name=".ScreenOffGestureSettingsActivity"
             android:label="@string/screen_off_gestures_title"
-            android:theme="@style/MotoActions">
+            android:theme="@style/MotoActions"
+            android:exported="true">
         </activity>
 
     </application>
