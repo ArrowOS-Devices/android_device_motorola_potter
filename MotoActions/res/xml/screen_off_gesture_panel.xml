@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License"
      you may not use this file except in compliance with the License.
@@ -21,11 +21,13 @@
     <SwitchPreference
         android:key="tap_to_wake"
         android:title="@string/tap_to_wake"
+        android:icon="@drawable/ic_tap"
         android:summary="@string/tap_to_wake_summary" />
 
     <SwitchPreference
         android:key="haptic_feedback"
         android:title="@string/haptic_feedback"
+        android:icon="@drawable/ic_vibrate"
         android:summary="@string/haptic_feedback_summary" />
 
     <ListPreference
@@ -35,6 +37,7 @@
         android:key="screen_off_gestures_swipe_left"
         android:defaultValue="0"
         android:entries="@array/screen_off_listArray"
+        android:icon="@drawable/ic_swipe_left"
         android:entryValues="@array/screen_off_listValues" />
 
     <ListPreference
@@ -44,6 +47,7 @@
         android:key="screen_off_gestures_swipe_right"
         android:defaultValue="0"
         android:entries="@array/screen_off_listArray"
+        android:icon="@drawable/ic_swipe_right"
         android:entryValues="@array/screen_off_listValues" />
 
     <ListPreference
@@ -53,6 +57,7 @@
         android:key="screen_off_gestures_swipe_up"
         android:defaultValue="0"
         android:entries="@array/screen_off_listArray"
+        android:icon="@drawable/ic_swipe_up"
         android:entryValues="@array/screen_off_listValues" />
 
     <ListPreference
@@ -62,6 +67,7 @@
         android:key="screen_off_gestures_swipe_down"
         android:defaultValue="0"
         android:entries="@array/screen_off_listArray"
+        android:icon="@drawable/ic_swipe_down"
         android:entryValues="@array/screen_off_listValues" />
 
 </PreferenceScreen>
