@@ -91,7 +91,21 @@ void vendor_load_properties()
 
     // sku
     std::string sku = android::base::GetProperty("ro.boot.hardware.sku", "");
-    property_override_dual("ro.product.model", "ro.vendor.product.model", sku.c_str());
+    if (sku == "XT1683") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1683)");    
+    } else if (sku == "XT1680") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1680)");
+    } else if (sku == "XT1681") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1681)");
+    } else if (sku == "XT1684") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1684)");
+    } else if (sku == "XT1685") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1685)");
+    } else if (sku == "XT1686") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1686)");
+    } else if (sku == "XT1687") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5 Plus (XT1687)");       
+    }
 
     // fingerprint
     property_override("ro.build.description", "potter-7.0/NPNS25.137-33-11/11:user/release-keys");
