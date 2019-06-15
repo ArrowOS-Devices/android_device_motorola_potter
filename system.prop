@@ -87,7 +87,6 @@ persist.camera.eis.enable=1
 # CNE
 persist.vendor.cne.logging.qxdm=3974
 persist.vendor.cne.rat.wlan.chip.oem=WCN
-persist.vendor.dpm.feature=0
 persist.vendor.sys.cnd.iwlan=1
 
 #property to enable fingerprint
@@ -115,7 +114,6 @@ dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 ro.opengles.version=196610
 ro.sf.lcd_density=420
-persist.debug.wfd.enable=1
 sdm.debug.disable_skip_validate=1
 debug.gralloc.enable_fb_ubwc=1
 persist.camera.preview.ubwc=0
@@ -166,25 +164,6 @@ persist.vt.supported=0
 persist.volte_enabled_by_hw=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.ims_volte_enable=1
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
-persist.vendor.radio.force_on_dc=true
-persist.vendor.radio.data_ltd_sys_ind=1
-persist.vendor.radio.ignore_dom_time=10
-persist.radio.ignore_dom_time=10
-persist.radio.is_wps_enabled=true
-persist.radio.videopause.mode=1
-persist.radio.sap_silent_pin=1
-persist.radio.always_send_plmn=true
-persist.rcs.supported=1
-
-persist.vendor.radio.qcril_uim_vcc_feature=1
-persist.radio.schd.cache=3500
-persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.lte_vrte_ltd=1
-persist.vendor.radio.cs_srv_type=1
 
 # Media
 media.aac_51_output_enabled=true
@@ -210,13 +189,10 @@ debug.qc.hardware=true
 persist.timed.enable=true
 
 # Radio
-persist.data.qmi.adb_logmask=0
 persist.radio.apn_delay=5000
 persist.radio.adam=true
-persist.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.dfr_mode_set=1
 persist.vendor.radio.force_get_pref=1
-persist.radio.msgtunnel.start=true
 persist.vendor.radio.no_wait_for_card=1
 persist.vendor.radio.oem_ind_to_both=0
 persist.vendor.radio.relay_oprt_change=1
@@ -233,22 +209,16 @@ persist.vendor.radio.0x9e_not_callname=1
 persist.vendor.qcril_uim_vcc_feature=1
 persist.mot.gps.conf.from.sim=true
 persist.net.doxlat=true
-persist.radio.REVERSE_QMI=0
 persist.radio.ROTATION_ENABLE=1
 persist.radio.adb_log_on=0
 persist.radio.calls.on.ims=true
-persist.radio.domain.ps=0
 persist.radio.sar_sensor=1
 persist.vendor.radio.sib16_support=1
 persist.radio.sib16_support=1
 persist.vendor.radio.rat_on=combine
-persist.rmnet.mux=enabled
 ro.telephony.call_ring.multiple=false
 persist.vendor.radio.eri64_as_home=1
 persist.vendor.radio.data_con_rprt=1
-persist.radio.rat_on=combine
-persist.radio.data_ltd_sys_ind=1
-persist.radio.data_con_rprt=1
 persist.radio.calls.on.ims=1
 persist.vendor.radio.add_power_save=1
 persist.vendor.dpm.feature=0
@@ -263,7 +233,6 @@ persist.radio.sap_silent_pin=1
 persist.radio.always_send_plmn=true
 persist.rcs.supported=1
 ro.telephony.default_network=10,0
-
 persist.radio.msgtunnel.start=true
 persist.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.qcril_uim_vcc_feature=1
@@ -277,7 +246,6 @@ ro.vendor.use_data_netmgrd=true
 persist.data.qmi.adb_logmask=0
 persist.vendor.radio.snapshot_timer=22
 persist.vendor.radio.snapshot_enabled=1
-persist.radio.calls.on.ims=true
 persist.radio.domain.ps=0
 persist.rmnet.mux=enabled
 persist.radio.REVERSE_QMI=0
@@ -291,12 +259,6 @@ persist.cne.logging.qxdm=3974
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 DEVICE_PROVISIONED=1
-
-# Debug Options
-persist.dbg.ims_volte_enable=1 
-persist.dbg.volte_avail_ovr=1 
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
 
 # RmNet Data
 persist.rmnet.data.enable=true
@@ -322,14 +284,7 @@ ro.usb.bpt_adb=0x2ee6
 ro.usb.bpteth=0x2ee7
 ro.usb.bpteth_adb=0x2ee8
 
-# UI thread scheduling
-sys.use_fifo_ui=1
-
 # Vendor Extension
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.at_library=libqti-at.so
 ro.vendor.gt_library=libqti-gt.so
-
-# touch optimize
-persist.vendor.qti.inputopts.enable=true
-persist.vendor.qti.inputopts.movetouchslop=0.6
