@@ -10,9 +10,5 @@
   {
     "repository": "packages_resources_MotoActions",
     "target_path": "packages/resources/MotoActions"
-  },
-  {
-    "repository": "android_prebuilts_clang_host_linux-x86_clang-5407736",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-5407736"
   }
 ]
