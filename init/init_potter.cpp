@@ -48,13 +48,6 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-    char const value[])
-{
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
-}
-
 void num_sims() {
     std::string dualsim;
 
@@ -77,11 +70,6 @@ void vendor_load_properties()
 
     // sku
     std::string sku = android::base::GetProperty("ro.boot.hardware.sku", "");
-    property_override_dual("ro.product.model", "ro.vendor.product.model", sku.c_str());
-
-    // fingerprint
-    property_override("ro.build.description", "potter-7.0/NPNS25.137-33-11/11:user/release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys");
 
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
