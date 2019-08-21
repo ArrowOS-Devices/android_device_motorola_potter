@@ -82,7 +82,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := potter_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/potter
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
-TARGET_USE_SDCLANG := true
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Audio
