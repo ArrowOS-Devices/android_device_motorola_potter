@@ -1,7 +1,7 @@
 [
   {
-    "repository":  "android_kernel_motorola_msm8953",
-    "target_path": "kernel/motorola/msm8953"
+    "repository":  "android_kernel_motorola_potter",
+    "target_path": "kernel/motorola/potter"
   },
   {
     "repository": "android_vendor_motorola_potter",
