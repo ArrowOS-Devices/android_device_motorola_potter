@@ -77,4 +77,8 @@
         <permission name="android.permission.ACCESS_FM_RADIO"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.qualcomm.atfwd">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
 </permissions>
