@@ -41,8 +41,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="potter_retail" \
     PRODUCT_MODEL="Moto G (5) Plus" \
