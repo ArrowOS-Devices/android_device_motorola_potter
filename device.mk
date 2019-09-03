@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.broadcastradio@1.0-impl \
     audio.primary.msm8953 \
     audio.a2dp.default \
     audio.usb.default \
@@ -73,18 +77,11 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libshim_adsp \
     libtinycompress \
-    audiod
-
-PRODUCT_PACKAGES += \
+    audiod \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle
-
-PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.broadcastradio@1.0-impl
 
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
