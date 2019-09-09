@@ -219,10 +219,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
 
-# IMS
+# IMS & Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
-    telephony-ext
+    ims_ext_common.xml \
+    telephony-ext \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
