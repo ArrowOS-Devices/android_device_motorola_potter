@@ -119,7 +119,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=420 \
     sdm.debug.disable_skip_validate=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     persist.camera.preview.ubwc=0 \
@@ -133,9 +132,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     vendor.video.disable.ubwc=1 \
     vendor.gralloc.disable_wb_ubwc=1 \
+    mm.enable.smoothstreaming=true \
     persist.sys.wfd.nohdcp=1 \
     persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
+    persist.sys.wfd.virtual=0 \
+    ro.sf.lcd_density=420 \
+    ro.qualcomm.cabl=0 \
+    ro.vendor.display.cabl=0 \
+    persist.sys.sf.native_mode=1 \
+    vendor.gralloc.disable_ubwc=0 \
+    vendor.display.disable_scaler=0 \
+    vendor.display.disable_inline_rotator=1 \
+    vendor.display.disable_decimation=1 \
+    vendor.display.disable_excl_rect_partial_fb=1 \
+    vendor.display.enable_null_display=0 \
+    vendor.display.disable_excl_rect=0 \
+    vendor.display.comp_mask=0 \
+    sdm.max_external_layers=4 \
+    vendor.display.hwc_disable_hdr=1 \
+    debug.mdpcomp.logs=0
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -143,17 +158,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.texture_cache_size=72 \
     ro.hwui.layer_cache_size=48 \
-    ro.hwui.path_cache_size=32 \
     ro.hwui.r_buffer_cache_size=8 \
-    ro.hwui.text_large_cache_height=1024 \
-    ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_small_cache_height=1024 \
-    ro.hwui.text_small_cache_width=1024 \
+    ro.hwui.path_cache_size=32 \
+    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.drop_shadow_cache_size=6 \
     ro.hwui.texture_cache_flushrate=0.4 \
-    ro.hwui.texture_cache_size=72
+    ro.hwui.text_small_cache_width=1024 \
+    ro.hwui.text_small_cache_height=1024 \
+    ro.hwui.text_large_cache_width=2048 \
+    ro.hwui.text_large_cache_height=1024
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -175,6 +190,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.volte_enabled_by_hw=1 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.ims_volte_enable=1
+
+# Location
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.location.osnlp.package=com.google.android.gms \
+    ro.location.osnlp.region.package=
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -276,6 +296,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.sys.fw.use_trim_settings=true \
+    ro.vendor.qti.sys.fw.empty_app_percent=50 \
+    ro.vendor.qti.sys.fw.trim_empty_percent=100 \
+    ro.vendor.qti.sys.fw.trim_cache_percent=100 \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # USB
