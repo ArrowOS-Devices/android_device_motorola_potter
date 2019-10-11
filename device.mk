@@ -139,7 +139,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl
+    vendor.display.color@1.0-impl \
+    vendor.display.config@1.3
 
 # HIDL
 PRODUCT_PACKAGES += \
