@@ -107,7 +107,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapsize=512m \
     dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heaptargetutilization=0.75
+    dalvik.vm.heaptargetutilization=0.75 \
+    ro.sys.fw.dex2oat_thread_count=4 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-threads=4 \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-filter=speed \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -143,17 +149,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.texture_cache_size=72 \
     ro.hwui.layer_cache_size=48 \
-    ro.hwui.path_cache_size=32 \
     ro.hwui.r_buffer_cache_size=8 \
-    ro.hwui.text_large_cache_height=1024 \
-    ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_small_cache_height=1024 \
-    ro.hwui.text_small_cache_width=1024 \
+    ro.hwui.path_cache_size=32 \
+    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.drop_shadow_cache_size=6 \
     ro.hwui.texture_cache_flushrate=0.4 \
-    ro.hwui.texture_cache_size=72
+    ro.hwui.text_small_cache_width=1024 \
+    ro.hwui.text_small_cache_height=1024 \
+    ro.hwui.text_large_cache_width=2048 \
+    ro.hwui.text_large_cache_height=1024
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -175,6 +181,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.volte_enabled_by_hw=1 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.ims_volte_enable=1
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.radio.force_ltd_sys_ind=1 \
+    persist.vendor.radio.voice_on_lte=1 \
+    persist.vendor.radio.calls.on.ims=1 \
+
+# Location
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.location.osnlp.package=com.google.android.gms \
+    ro.location.osnlp.region.package=
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -182,7 +198,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.qcom_parser=135715 \
     mm.enable.sec.smoothstreaming=false \
     mm.enable.smoothstreaming=false \
-    mmp.enable.3g2=true
+    mmp.enable.3g2=true \
+    drm.service.enabled=true
 
 # Qualcomm
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -274,8 +291,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
+#Enable B service adj transition by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.sys.fw.bservice_enable=true \
+    ro.vendor.qti.sys.fw.bservice_limit=5 \
+    ro.vendor.qti.sys.fw.bservice_age=5000
+
 # Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.sys.fw.use_trim_settings=true \
+    ro.vendor.qti.sys.fw.empty_app_percent=50 \
+    ro.vendor.qti.sys.fw.trim_empty_percent=100 \
+    ro.vendor.qti.sys.fw.trim_cache_percent=100 \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # USB
