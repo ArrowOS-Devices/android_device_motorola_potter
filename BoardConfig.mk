@@ -250,9 +250,6 @@ TARGET_USES_MKE2FS := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-12-01
 
-# VNDK
-PRODUCT_USE_VNDK_OVERRIDE := false
-
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
