@@ -241,9 +241,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so \
     /system/lib/libjustshoot.so|libjustshoot_shim.so
 
-# Thermal
-USE_DEVICE_SPECIFIC_THERMAL := true
-
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
