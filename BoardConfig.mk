@@ -253,7 +253,6 @@ VENDOR_SECURITY_PATCH := 2018-12-01
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
-BOARD_HAS_QCOM_WLAN_SDK          := true
 PRODUCT_VENDOR_MOVE_ENABLED      := true
 BOARD_WLAN_DEVICE                := qcwcn
 BOARD_HOSTAPD_DRIVER             := NL80211
