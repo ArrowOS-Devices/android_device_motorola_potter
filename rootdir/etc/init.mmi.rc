@@ -3,7 +3,6 @@ import /vendor/etc/init/hw/init.mmi.usb.rc
 
 on early-boot
     write /sys/module/subsystem_restart/parameters/disable_restart_work 0x0
-    write /proc/sys/kernel/poweroff_cmd "/system/bin/reboot -p"
 
 on init
     chown system log /sys/fs/pstore/console-ramoops-0
