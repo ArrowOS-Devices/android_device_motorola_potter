@@ -38,28 +38,33 @@ on early-init
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
 
+on init
+    # Create cgroup mount point for memory
+    mkdir /sys/fs/cgroup/memory/bg 0750 root system
+    write /sys/fs/cgroup/memory/bg/memory.swappiness 140
+    write /sys/fs/cgroup/memory/bg/memory.move_charge_at_immigrate 1
+    chown root system /sys/fs/cgroup/memory/bg/tasks
+    chmod 0660 /sys/fs/cgroup/memory/bg/tasks
+
+    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    mount_all /vendor/etc/fstab.qcom --early
 
     # Start HW service manager early
     start hwservicemanager
-    mount_all /vendor/etc/fstab.qcom --early
 
 on late-fs
     # Start services for bootanim
-    start vendor.configstore-hal
     start servicemanager
     start surfaceflinger
     start bootanim
+    start vendor.configstore-hal
     start vendor.gralloc-2-0
 
-    # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
-    # In such case, init won't responce the property_set from hwservicemanager and then
-    # cause services for bootanim not running.
-    wait_for_prop hwservicemanager.ready true
-
-    # mount RW partitions which need run fsck
+    # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
     # Keeping following partitions outside fstab file. As user may not have
@@ -73,18 +78,8 @@ on late-fs
     wait /dev/block/bootdevice/by-name/dsp
     restorecon_recursive   /dsp
 
-on init
-    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
     # Set permissions for persist partition
     mkdir /persist 0771 root system
-
-    # Create cgroup mount point for memory
-    mkdir /sys/fs/cgroup/memory/bg 0750 root system
-    write /sys/fs/cgroup/memory/bg/memory.swappiness 140
-    write /sys/fs/cgroup/memory/bg/memory.move_charge_at_immigrate 1
-    chown root system /sys/fs/cgroup/memory/bg/tasks
-    chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -96,12 +91,6 @@ on early-boot
     # write /sys/kernel/boot_slpi/boot 1
 
 on boot
-    # access permission for secure touch
-    chmod 0660 /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch_enable
-    chmod 0440 /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch
-    chown system drmrpc /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch_enable
-    chown system drmrpc /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input0/secure_touch
-
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
