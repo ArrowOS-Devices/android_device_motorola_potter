@@ -716,15 +716,6 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
 on property:ro.hw.dtv=true
     insmod /vendor/lib/modules/isdbt.ko
 
-service cnss-daemon /vendor/bin/cnss-daemon -n -l
-    class late_start
-    user system
-    group system inet net_admin wifi
-    capabilities NET_ADMIN
-
-on property:sys.shutdown.requested=*
-    stop cnss-daemon
-
 service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
     class late_start
     disabled
