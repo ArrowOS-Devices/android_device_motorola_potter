@@ -44,6 +44,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="potter_retail" \
     PRODUCT_MODEL="Moto G (5) Plus" \
-    PRIVATE_BUILD_DESC="potter-user 8.1.0 OPSS28.85-17-4 28698 release-keys"
+    PRIVATE_BUILD_DESC="potter-7.0/NPNS25.137-33-11/11:user/release-keys"
 
 BUILD_FINGERPRINT := "motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys"
