@@ -194,6 +194,7 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libcurl \
+    libgpu_mapper_shim \
     libqsap_shim
 
 PRODUCT_COPY_FILES += \
