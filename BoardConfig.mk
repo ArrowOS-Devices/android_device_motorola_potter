@@ -201,7 +201,6 @@ BOARD_ROOT_EXTRA_FOLDERS := dsp firmware fsg persist
 TARGET_PER_MGR_ENABLED := true
 
 # Power
-TARGET_PROVIDES_POWERHAL := true
 TARGET_HAS_NO_WLAN_STATS := true
 
 # QC flags
