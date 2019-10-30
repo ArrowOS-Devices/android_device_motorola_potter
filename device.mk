@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2018-2019 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -61,12 +62,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.calibration_cad=/system/etc/calibration_cad.xml
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/calibration_cad.xml:system/etc/calibration_cad.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
@@ -112,7 +107,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
-    Snap \
+    Camera2 \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     android.hardware.camera.provider@2.4-impl \
