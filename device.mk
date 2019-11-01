@@ -322,7 +322,7 @@ PRODUCT_PACKAGES += \
     init.mmi.usb.rc \
     init.qcom.rc \
     init.qcom.ril.sh \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
     init.safailnet.rc
 
 # Powerhint configuration file
