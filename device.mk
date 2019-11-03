@@ -247,8 +247,8 @@ PRODUCT_PACKAGES += \
     lights.msm8953
 
 # MotoActions
-#PRODUCT_PACKAGES += \
-#    MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
 
 # Media
 PRODUCT_PACKAGES += \
