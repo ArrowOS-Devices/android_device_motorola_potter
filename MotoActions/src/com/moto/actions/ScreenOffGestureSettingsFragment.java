@@ -18,10 +18,10 @@ package com.moto.actions;
 
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v7.preference.Preference;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v14.preference.PreferenceFragment;
 import android.view.MenuItem;
+import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
+import androidx.preference.PreferenceFragment;
 
 import static android.provider.Settings.Secure.DOUBLE_TAP_TO_WAKE;
 import static com.moto.actions.actions.Constants.KEY_GESTURE_ENABLE_HAPTIC_FEEDBACK;
