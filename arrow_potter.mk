@@ -41,9 +41,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="potter_retail" \
-    PRODUCT_MODEL="Moto G (5) Plus" \
+    PRODUCT_NAME="Moto G5 Plus" \
     PRIVATE_BUILD_DESC="potter-user 8.1.0 OPSS28.85-17-4 28698 release-keys"
 
 BUILD_FINGERPRINT := "motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys"

@@ -78,7 +78,10 @@ void num_sims() {
 void vendor_load_properties()
 {
     // sku
-    std::string sku = android::base::GetProperty("ro.boot.hardware.sku", "");
+    std::string sku = "Moto G5 Plus (";
+    sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
+    sku.append(")");
+    property_set("ro.product.model", sku.c_str());
 
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
