@@ -173,7 +173,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.sec.smoothstreaming=false \
     mm.enable.smoothstreaming=false \
     mmp.enable.3g2=true \
-    drm.service.enabled=true
+    drm.service.enabled=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Qualcomm
 PRODUCT_PROPERTY_OVERRIDES += \
