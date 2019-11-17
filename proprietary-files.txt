@@ -60,7 +60,6 @@ etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
 etc/init/perfservice.rc
 etc/init/wfdservice.rc
 etc/permissions/cneapiclient.xml
-etc/permissions/cneapiclient.xml
 etc/permissions/com.motorola.cameraone.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/com.qti.snapdragon.sdk.display.xml
@@ -80,7 +79,6 @@ framework/cneapiclient.jar
 framework/com.qti.dpmframework.jar
 framework/com.qti.snapdragon.sdk.display.jar
 framework/com.qualcomm.qti.imscmservice@1.0-java.jar
-framework/com.qualcomm.qti.imscmservice@1.0-java.jar
 framework/com.quicinc.cne.api-V1.0-java.jar
 framework/com.quicinc.cne.jar
 framework/ConnectivityExt.jar
@@ -88,7 +86,6 @@ framework/embmslibrary.jar
 framework/imscmlibrary.jar
 framework/qcrilhook.jar
 framework/qti-telephony-common.jar
-framework/QtiTelephonyServicelibrary.jar
 framework/QtiTelephonyServicelibrary.jar
 framework/rcsimssettings.jar
 framework/tcmclient.jar
@@ -107,8 +104,6 @@ lib/libmmparser_lite.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
 lib/libmotaudioutils.so
-lib/libmotaudioutils.so
-lib/libmotefem_svc.so
 lib/libmotefem_svc.so
 lib/libmotext_inf.so
 lib/libmotimager_utils.so
@@ -231,7 +226,6 @@ vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml
-vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml
 vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml
@@ -292,7 +286,6 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libactuator_dw9718s.so
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9767.so
-vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_mot_ak7371.so
 vendor/lib/libactuator_pseudo.so
@@ -622,7 +615,6 @@ vendor/lib/lib-dplmedia.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libDRPlugin.so
-vendor/lib/libDRPlugin.so
 vendor/lib/libdrplugin_client.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -756,9 +748,7 @@ vendor/lib/libmmcamera_mot_imx258.so
 vendor/lib/libmmcamera_mot_imx258_bear.so
 vendor/lib/libmmcamera_mot_imx258_mono.so
 vendor/lib/libmmcamera_mot_imx362.so
-vendor/lib/libmmcamera_mot_imx362.so
 vendor/lib/libmmcamera_mot_imx362_pdaf.so
-vendor/lib/libmmcamera_mot_ov5695.so
 vendor/lib/libmmcamera_mot_ov5695.so
 vendor/lib/libmmcamera_mot_s5k2l7.so
 vendor/lib/libmmcamera_mot_s5k2l7_pdaf.so
@@ -870,7 +860,6 @@ vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_csvt_srvc.so
-vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libqomx_core.so
@@ -931,7 +920,6 @@ vendor/lib/libscveTextReco_stub.so
 vendor/lib/libscveTextRecoPostProcessing.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-apis.so
 vendor/lib/libsdm-disp-apis.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
@@ -1139,8 +1127,6 @@ vendor/lib64/lib-imsvtextutils.so
 vendor/lib64/lib-imsvtutils.so
 vendor/lib64/lib-imsxml.so
 vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libldacBT_abr.so
@@ -1149,8 +1135,6 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
 vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_ds_api.so
 vendor/lib64/libloc_ds_api.so
 vendor/lib64/libloc_externalDr.so
 vendor/lib64/liblocationservice.so
@@ -1210,7 +1194,6 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd-client_system.so
 vendor/lib64/libQtiTether.so
 vendor/lib64/libqti-util.so
-vendor/lib64/libqti-util_system.so
 vendor/lib64/libqti-util_system.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libquipc_os_api.so
@@ -1288,7 +1271,6 @@ vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
@@ -1316,7 +1298,6 @@ vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
-vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.latency@2.0.so
