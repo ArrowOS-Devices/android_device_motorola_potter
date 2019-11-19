@@ -10,8 +10,8 @@ bin/radish
 bin/wfdservice
 etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
+vendor/etc/data/dsi_config.xml
+vendor/etc/data/netmgr_config.xml
 etc/firmware/a530_gpmu.fw2
 etc/firmware/a530_pfp.fw
 etc/firmware/a530_pm4.fw
