@@ -898,7 +898,7 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_upmigrate_min_nice 19
 
     # Enable sched guided freq control
-    write /sys/devices/system/cpu/cpufreq/interactive/use_sched_load 1
+    write /sys/devices/system/cpu/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpufreq/interactive/use_migration_notif 1
     write /proc/sys/kernel/sched_freq_inc_notify 200000
     write /proc/sys/kernel/sched_freq_dec_notify 200000
