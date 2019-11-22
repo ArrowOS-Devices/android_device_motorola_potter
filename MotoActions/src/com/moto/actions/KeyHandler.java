@@ -819,6 +819,7 @@ public class KeyHandler implements DeviceKeyHandler {
                     owningUid = android.os.Process.myUid();
                     owningPackage = mContext.getOpPackageName();
                     VibrationEffect effect = VibrationEffect.createOneShot(longpress ? 50 : 40, VibrationEffect.DEFAULT_AMPLITUDE);
+                    mVibrator.vibrate(owningUid, owningPackage, effect, VIBRATION_ATTRIBUTES);
                 }
             });
         }
