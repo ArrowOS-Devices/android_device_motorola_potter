@@ -2,7 +2,6 @@
 /system/etc/audio_policy_configuration.xml               u:object_r:vendor_configs_file:s0
 
 # ADSP
-/sys/kernel/aov(/.*)?                                    u:object_r:sysfs_adsp:s0
 /data/adspd(/.*)?                                        u:object_r:adspd_data_file:s0
 
 # AMPS
@@ -17,9 +16,6 @@
 /system/vendor/bin/motosh                                       u:object_r:sensor_hub_exec:s0
 /system/vendor/bin/akmd09912                                    u:object_r:akmd_exec:s0
 /system/vendor/bin/init\.qti\.fm\.sh		u:object_r:qti_init_shell_exec:s0
-/system/vendor/bin/hw/motorola\.hardware\.camera\.provider@2\.4-service u:object_r:hal_camera_default_exec:s0
-/system/vendor/lib/motorola\.hardware\.camera\.device@1\.0.so                  u:object_r:hal_camera_default_exec:s0
-/system/vendor/lib/motorola\.hardware\.camera\.provider@2\.4.so                u:object_r:hal_camera_default_exec:s0
 
 #binder to fix camera daemon
 /dev/binder(/.*)?                                                             u:object_r:binder_device:s0
@@ -159,4 +155,9 @@
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service.potter                                     u:object_r:hal_light_default_exec:s0
 /sys/devices/soc/1a00000.qcom,mdss_mdp/1a00000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight/brightness	   u:object_r:sysfs_leds:s0
-/sys/devices/soc/leds-atc-20/leds/charging/brightness	
+/sys/devices/soc/leds-atc-20/leds/charging/brightness                                   u:object_r:sysfs_leds:s0
+
+/bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
+/firmware(/.*)?          u:object_r:firmware_file:s0
+/fsg(/.*)?               u:object_r:fsg_file:s0
+
