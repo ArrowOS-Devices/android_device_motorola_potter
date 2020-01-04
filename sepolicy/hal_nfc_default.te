@@ -1,4 +1,4 @@
-typeattribute hal_nfc_default binder_in_vendor_violators;
+#typeattribute hal_nfc_default binder_in_vendor_violators;
 
 allow hal_nfc_default system_data_file:dir { add_name write };
 allow hal_nfc_default system_data_file:file { read getattr open };

@@ -51,13 +51,12 @@ allow init self:capability2 { block_suspend };
 
 allow init hal_sensors_hwservice:hwservice_manager find;
 
-allow init { domain -lmkd -crash_dump }:process noatsecure;
-
 allow init hal_perf_hwservice:hwservice_manager find;
 allow init hidl_base_hwservice:hwservice_manager add;
 
 allow init debugfs:dir mounton;
 allow init persist_file:dir mounton;
+allow init fsg_file:dir mounton;
 allow init sysfs:file { setattr };
 allow init sysfs_battery_supply:lnk_file {open read };
 allow init sysfs_fpc:file { rw_file_perms setattr };
@@ -65,4 +64,4 @@ allow init proc:file { open write };
 allow init sysfs_capsense:file setattr;
 
 # Allow init to mount vendor configs
-allow init vendor_configs_file:file mounton;
+# allow init vendor_configs_file:file mounton;
