@@ -81,4 +81,16 @@
     <privapp-permissions package="com.qualcomm.atfwd">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.android.hotwordenrollment.okgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.hotwordenrollment.tgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>           
+    </privapp-permissions>
 </permissions>
