@@ -2,7 +2,6 @@
 
 -app/ims/ims.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
-bin/charge_only_mode
 bin/ipacm-diag
 bin/perfservice
 bin/ptt_socket_app
