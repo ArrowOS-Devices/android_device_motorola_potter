@@ -31,6 +31,7 @@
 	<device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS" acdb_id="114" />
 	<device name="SND_DEVICE_IN_SPEAKER_MIC_NS" acdb_id="114" />
 	<device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="35"/>
+	<device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="34"/>
 	<device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="89"/>
 	<device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="42" />
 	<device name="SND_DEVICE_IN_HEADSET_MIC_AEC" acdb_id="47"/>
@@ -58,5 +59,9 @@
 	<usecase name="USECASE_VOWLAN_CALL" type="in" id="16"/>
 	<usecase name="USECASE_VOWLAN_CALL" type="out" id="16"/>
 </pcm_ids>
+
+<device_names>
+	<device name="SND_DEVICE_IN_CAMCORDER_MIC" alias="handset-stereo-dmic-ef"/>
+</device_names>
 
 </audio_platform_info>
