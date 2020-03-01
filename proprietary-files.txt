@@ -1,4 +1,3 @@
-# Proprietary files for potter
 -app/QtiTelephonyService/QtiTelephonyService.apk
 -app/ims/ims.apk
 -framework/WfdCommon.jar
@@ -15,6 +14,7 @@
 -vendor/app/TimeService/TimeService.apk
 -vendor/lib/libbtnv.so
 -vendor/lib64/libbtnv.so
+-vendor/lib64/libloc_api_v02.so
 bin/ipacm-diag
 bin/perfservice
 bin/ptt_socket_app
@@ -76,7 +76,6 @@ etc/wfdconfigsink.xml
 framework/ConnectivityExt.jar
 framework/QtiTelephonyServicelibrary.jar
 framework/cneapiclient.jar
-framework/com.qti.dpmframework.jar
 framework/com.qti.snapdragon.sdk.display.jar
 framework/com.qualcomm.qti.imscmservice@1.0-java.jar
 framework/com.quicinc.cne.api-V1.0-java.jar
@@ -165,6 +164,7 @@ vendor/bin/adsprpcd
 vendor/bin/akmd09912
 vendor/bin/audioflacapp
 vendor/bin/cnd
+vendor/bin/fm_qsoc_patches
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
@@ -177,6 +177,7 @@ vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
+vendor/bin/init.qti.fm.sh
 vendor/bin/irsc_util
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -241,6 +242,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
+vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
@@ -248,10 +250,8 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/permissions/ConnectivityExt.xml
 vendor/etc/permissions/cneapiclient.xml
-vendor/etc/permissions/com.qti.dpmframework.xml
 vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml
 vendor/etc/permissions/com.quicinc.cne.xml
-vendor/etc/permissions/embms.xml
 vendor/etc/permissions/ims.xml
 vendor/etc/permissions/imscm.xml
 vendor/etc/permissions/qcrilhook.xml
@@ -900,6 +900,7 @@ vendor/lib/liboemcrypto.so
 vendor/lib/libomx-dts.so
 vendor/lib/liboptizoom.so
 vendor/lib/libpanelmode.so
+vendor/lib/libpdmapper.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libprotobuf-cpp-biss.so
 vendor/lib/libprotobuf-cpp-shit.so
@@ -963,7 +964,6 @@ vendor/lib/libscveTextRecoPostProcessing.so
 vendor/lib/libscveTextReco_stub.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-apis.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libsdsprpc.so
@@ -1243,6 +1243,7 @@ vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/liboemcrypto.so
+vendor/lib64/libpdmapper.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqcci_legacy.so
@@ -1288,7 +1289,6 @@ vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/libscalar.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-apis.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libsecureui.so
