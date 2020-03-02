@@ -88,11 +88,13 @@ framework/rcsimssettings.jar
 framework/tcmclient.jar
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/extractors/libmmparser.so
+lib/fm_helium.so
 lib/libFileMux.so
 lib/libOmxMux.so
 lib/libadropbox.so
 lib/libarcsoft_beautyshot.so
 lib/libfamily_photo.so
+lib/libfm-hci.so
 lib/libjson.so
 lib/libmdmcutback.so
 lib/libmemalloc.so
@@ -129,8 +131,10 @@ lib/libzxingcpp.so
 lib/vendor.qti.hardware.fm@1.0.so
 lib64/com.qualcomm.qti.imscmservice@1.0.so
 lib64/extractors/libmmparser.so
+lib64/fm_helium.so
 lib64/libFileMux.so
 lib64/libOmxMux.so
+lib64/libfm-hci.so
 lib64/libmmosal.so
 lib64/libmmparser_lite.so
 lib64/libmmrtpdecoder.so
