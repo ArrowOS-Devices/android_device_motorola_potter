@@ -175,7 +175,7 @@ vendor/bin/cnd
 vendor/bin/fm_qsoc_patches
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -247,7 +247,7 @@ vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/dataadpl.rc
