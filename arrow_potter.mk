@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017-2018 The LineageOS Project
-# Copyright (C) 2018-2019 ArrowOS
+# Copyright (C) 2018-2020 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ PRODUCT_DEVICE := potter
 PRODUCT_NAME := arrow_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
+DEVICE_MAINTAINER := kubersharma001
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
