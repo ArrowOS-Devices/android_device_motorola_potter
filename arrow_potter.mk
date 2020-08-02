@@ -34,6 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
 PRODUCT_NAME := arrow_potter
+PRODUCT_MODEL := Moto G5 Plus
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 DEVICE_MAINTAINER := kubersharma001
