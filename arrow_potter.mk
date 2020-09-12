@@ -48,3 +48,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="potter-user 8.1.0 OPSS28.85-17-4 28698 release-keys"
 
 BUILD_FINGERPRINT := "motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys"
+
+TARGET_EXCLUDE_LAWNCHAIR := true
